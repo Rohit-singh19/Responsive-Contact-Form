@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #3e2093;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.head{
+    color: white;
+    text-align: center;
+}
+
+.head h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.head p{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    color: white;
+    width: 800px;
+}
+
+.sub-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+}
+
+.sub-detail i{
+    margin-bottom: 1rem;
+}
+
+.sub-detail:hover{
+    background-color: #fa949d;
+    border-radius: 10px;
+}
+
+.form{
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+}
+
+.form h4{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-detail, .user-message{
+    width: 48%;
+}
+
+.form-label{
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.form-label i{
+    position: absolute;
+    top: 65%;
+    left: 10px;
+    color: #111;
+}
+
+.form-label label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-label input{
+    width: 100%;
+    padding: .5rem 1.2rem .5rem 2rem;
+    background-color: #f1f1f1;
+    border: none;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.form-label input:hover,
+.user-message .form-label textarea:hover{
+    border: 2px solid #ccc;
+}
+
+.form-label input:focus,
+.user-message .form-label textarea:focus{
+    border: 2px solid #fa949d;
+}
+
+.user-message .form-label{
+    height: 100%;
+}
+
+.user-message .form-label textarea{
+    padding: 1rem;
+    width: 100%;
+    height: 80%;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.services label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.serv-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.serv{
+    padding: .5rem 1.2rem;
+    background-color: #f1f1f1;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.serv:hover{
+    border: 2px solid #fa949d;
+    color: #fa949d;
+}
+
+.btn{
+    margin: 1.2rem auto;
+    padding: 1rem 1.2rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #fa949d;
+    width: fit-content;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #fa949d;
+    border: 2px solid #fa949d;
+}
+
+@media only screen and (max-width: 850px) {
+    .container{
+        padding: 1rem 20px;
+    }
+
+    .detail,.form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .user-detail, .user-message{
+        width: 100%;
+    }
+    .detail, form{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .sub-detail {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .sub-detail i{
+        margin-right: 1rem;
+    }
+}
